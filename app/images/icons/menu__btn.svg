@@ -1,0 +1,16 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 28 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #00ff78;
+      }
+    </style>
+  </defs>
+  <path id="menu" class="cls-1" d="M80,113h26v2H80v-2Zm0-16h26v2H80V97Z" transform="translate(-80 -97)"/>
+  <rect id="menu_copy" data-name="menu copy" class="cls-2" x="2" y="8" width="26" height="2"/>
+</svg>

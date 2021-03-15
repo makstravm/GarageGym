@@ -1,0 +1,4 @@
+<svg id="play-button" xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82">
+  <circle style=' fill: none; stroke: #fff;stroke-width: 2px;' cx="41" cy="41" r="40"/>
+  <path  style=' fill: #fff; fill-rule: evenodd;' d="M968,843l-12-7v14l12-7" transform="translate(-919 -802)"/>
+</svg>
