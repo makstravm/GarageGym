@@ -1,7 +1,10 @@
 $(function () {
-
-
-
+  $('.menu__btn, .menu__btn-close, .menu__item-link, .menu__button, .menu__logo' ).on('click', function () {
+    $('.menu').toggleClass('_active');
+  });
+  $('.header__contact-btn, .contact__btn, .contact__social-link' ).on('click', function () {
+    $('.contact').toggleClass('_active');
+  })
 });
 
 const swiperBg = new Swiper('.header__swiper', {
@@ -35,3 +38,4 @@ const swiperText = new Swiper('.header__text-swiper', {
 
 swiperBg.controller.control = swiperText;
 swiperText.controller.control = swiperBg;
+

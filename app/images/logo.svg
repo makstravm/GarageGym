@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="15" viewBox="0 0 195 15">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 8.174px;
+        fill: #00ff78;
+        font-family: Plateia;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <text id="logo_copy" data-name="logo copy" class="cls-1" transform="translate(-0.478 14.339) scale(2.447)">GARAGE<tspan class="cls-2">GYM</tspan></text>
+</svg>
