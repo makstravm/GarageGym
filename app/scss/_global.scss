@@ -256,5 +256,62 @@ body {
   min-width: 245px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
   cursor: pointer;
+}
+.link-to-top {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  max-width: 1800px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3;
+  pointer-events: none;
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-90deg);
+    pointer-events: auto;
+  }
+}
+
+.form-modal {
+  max-width: 730px;
+  padding: 75px 80px 80px;
+  text-align: center;
+  background-color: #191919;
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+    @extend %plateia-700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    text-align: center;
+    max-width: 370px;
+    line-height: 22px;
+    @extend %monts-300;
+    margin: 0 auto 20px;
+  }
+  .connect__form-personal {
+    margin: 0 auto 20px;
+  }
+  .connect__form-btn {
+    min-width: 250px;
+  }
+  .fancybox-button svg path {
+    color: $accent;
+  }
 }
