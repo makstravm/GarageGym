@@ -1,0 +1,17 @@
+<svg id="bg" xmlns="http://www.w3.org/2000/svg" width="1110" height="148" viewBox="0 0 1110 148">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        font-size: 82.434px;
+        opacity: 0.05;
+        fill: #fff;
+        font-family: Plateia;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="join_us" data-name="join us" class="cls-1" transform="translate(-6.847 144.032) scale(2.911)">join us</text>
+</svg>
