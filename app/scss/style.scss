@@ -6,15 +6,23 @@
 
 .header {
   margin: 0 auto;
-  &__top {
+  &__top-wrapper {
     position: fixed;
-    margin: 0 auto;
     left: 0;
     top: 80px;
     right: 0;
+    z-index: 4;
+    transition: all 0.3s;
+    &.active {
+      background-color: #1a1a1a;
+      top: 0;
+     padding: 25px 0;
+    }
+  }
+  &__top {
     max-width: 1800px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20px; margin: 0 auto;
     z-index: 4;
   }
   &__top-inner {
@@ -353,7 +361,6 @@
     background-color: #181818;
     max-width: 730px;
     padding: 70px 80px 80px;
-  
   }
   &__modal-title {
     font-size: 28px;

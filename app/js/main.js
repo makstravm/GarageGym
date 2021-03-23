@@ -6,6 +6,24 @@ $(function () {
   $('.header__contact-btn, .contact__btn, .contact__social-link').on('click', function () {
     $('.contact').toggleClass('_active');
   });
+
+  $('.menu a, .logo, .link-to-top__btn').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1300);
+  });
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 200) {
+    $('.header__top-wrapper, .link-to-top__btn').addClass('active');
+  } else {
+    $('.header__top-wrapper, .link-to-top__btn').removeClass('active');
+  }
+})
+
 });
 
 const swiperBg = new Swiper('.header__swiper', {
@@ -94,7 +112,7 @@ swiperTeamContent.controller.control = swiperTeamImg;
 
 const swiperBlog = new Swiper('.blog__swiper', {
   slidesPerView: 2,
-  spaceBetween:70,
+  spaceBetween: 70,
   slidesPerGroup: 2,
   loop: true,
   loopFillGroupWithBlank: true,
