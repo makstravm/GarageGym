@@ -283,7 +283,7 @@ body {
     transform: rotate(-90deg);
     pointer-events: none;
     opacity: 0;
-    transition: all .3s ;
+    transition: all 0.3s;
     &.active {
       pointer-events: auto;
       opacity: 1;
@@ -317,7 +317,7 @@ body {
   .connect__form-btn {
     min-width: 250px;
   }
-  .fancybox-button svg path {
-    color: $accent;
-  }
+}
+.fancybox-button svg path {
+  fill: $accent;
 }

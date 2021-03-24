@@ -11,13 +11,13 @@ $(function () {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1300);
+    $('body,html').animate({ scrollTop: top }, 1000);
   });
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
-  if (scroll >= 200) {
+  if (scroll >= 100) {
     $('.header__top-wrapper, .link-to-top__btn').addClass('active');
   } else {
     $('.header__top-wrapper, .link-to-top__btn').removeClass('active');
@@ -111,6 +111,10 @@ swiperTeamImg.controller.control = swiperTeamContent;
 swiperTeamContent.controller.control = swiperTeamImg;
 
 const swiperBlog = new Swiper('.blog__swiper', {
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   slidesPerView: 2,
   spaceBetween: 70,
   slidesPerGroup: 2,

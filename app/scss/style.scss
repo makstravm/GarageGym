@@ -5,7 +5,20 @@
 @import "global";
 
 .header {
-  margin: 0 auto;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/bg-header.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
   &__top-wrapper {
     position: fixed;
     left: 0;
@@ -16,13 +29,14 @@
     &.active {
       background-color: #1a1a1a;
       top: 0;
-     padding: 25px 0;
+      padding: 25px 0;
     }
   }
   &__top {
     max-width: 1800px;
     width: 100%;
-    padding: 0 20px; margin: 0 auto;
+    padding: 0 20px;
+    margin: 0 auto;
     z-index: 4;
   }
   &__top-inner {
@@ -48,7 +62,7 @@
   &__contact-btn {
     position: fixed;
     right: -75px;
-    top: 35%;
+    top: calc(180px + 5vh);
     z-index: 4;
     font-size: 16px;
     text-transform: uppercase;
@@ -59,21 +73,12 @@
     border: none;
     cursor: pointer;
   }
-  &__title-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    left: 0;
-    z-index: 3;
-  }
   &__title {
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
     font-size: 90px;
+    margin-bottom: 75px;
     line-height: 110px;
     @extend %plateia-700;
     span {
@@ -85,27 +90,18 @@
     }
   }
   &__swiper {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../images/bg-header.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
   }
   &__swiper-item {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
   }
   &__text-swiper {
     margin-left: 0;
@@ -120,18 +116,20 @@
     border-left: 1px solid #fff;
   }
   &__content {
-    position: absolute;
     max-width: 1200px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 15px 50px;
+    padding-top: calc(80px + 20vh);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
     margin: 0 auto;
-    left: 0;
-    bottom: 80px;
-    right: 0;
-    z-index: 3;
+  }
+  &__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .swiper-pagination-bullet {
     @extend %monts-400;
@@ -234,12 +232,8 @@
     margin-bottom: 70px;
   }
   &__title {
-    font-size: 40px;
-    line-height: 54px;
-    @extend %plateia-700;
     margin-bottom: 25px;
     padding: 0 15px;
-    text-transform: uppercase;
   }
   &__item {
     display: flex;
@@ -347,9 +341,11 @@
   }
   &__item-box {
     box-shadow: -30px -30px 0px 0px $accent;
+    margin-left: 25px;
   }
   &__item {
     max-width: 600px;
+    margin-left: 35px;
   }
   &__title {
     margin-bottom: 20px;
@@ -492,7 +488,6 @@
     width: 1px;
     height: 180px;
     background-color: $accent;
-    z-index: -1;
   }
   &::after {
     bottom: 0;
@@ -606,6 +601,7 @@
     left: 0;
     right: 0;
     background-size: cover;
+    background-position: center center;
     background-image: url(../images/progress-bg-shadow.png);
     z-index: -1;
   }
@@ -847,16 +843,6 @@
   }
   &__title {
     margin-bottom: 60px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      top: -130px;
-      right: 0;
-      background-image: url(../images/icons/quote.svg);
-      width: 290px;
-      height: 235px;
-    }
   }
   &__name {
     font-size: 28px;
