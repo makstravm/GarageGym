@@ -131,7 +131,7 @@ body {
   }
   &__box {
     margin: 0 auto;
-    width: 500px;
+    max-width: 500px;
     padding-top: 80px;
     z-index: 6;
     padding-bottom: 40px;

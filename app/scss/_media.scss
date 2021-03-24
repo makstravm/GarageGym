@@ -1,0 +1,156 @@
+@media (max-width: 1400px) {
+  .header {
+    &__top-wrapper {
+      top: 40px;
+    }
+    &__content {
+      bottom: 40px;
+    }
+    &__contact-btn {
+      right: -67px;
+      padding: 5px 20px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__top-wrapper {
+      top: 40px;
+    }
+    &__content {
+      bottom: 40px;
+    }
+    &__contact-btn {
+      right: -67px;
+      padding: 5px 20px;
+      font-size: 14px;
+    }
+    &__title {
+      font-size: 65px;
+      line-height: 80px;
+    }
+    &__title-box {
+      top: calc(25% + 50px);
+    }
+    &__title span {
+      text-align: center;
+    }
+    &__content {
+      bottom: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__text-swiper {
+      max-width: 100%;
+      order: -1;
+    }
+    &__text {
+      max-width: 370px;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .header {
+    &__title {
+      font-size: 42px;
+      line-height: 54px;
+    }
+    .header__content {
+      bottom: 10px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .menu {
+    &__btn {
+      margin-right: 0;
+    }
+  }
+  .header {
+    &__title {
+      font-size: 42px;
+      line-height: 54px;
+    }
+    &__contact-btn {
+      right: -53px;
+      padding: 0px 10px;
+      font-size: 12px;
+      top: calc(30% + 75px);
+    }
+    &__play-btn {
+      svg {
+        width: 50px;
+      }
+    }
+    &__button-prev,
+    &__button-next {
+      margin-top: 5px;
+      svg {
+        height: 25px;
+      }
+    }
+    &__button-next {
+      margin-left: 20px;
+    }
+    .swiper-pagination-bullet-active {
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .header {
+    &__top-link {
+      display: none;
+    }
+    &__swiper-item {
+      background-position: -180px center;
+    }
+  }
+  .menu {
+    &__box {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  .contact {
+    &__box {
+      padding-right: 35px;
+      padding-left: 20px;
+    }
+    &__logo {
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .header {
+    &__title {
+      font-size: 30px;
+      line-height: 42px;
+    }
+    &__content {
+      justify-content: space-between;
+    }
+    &__slider-controll {
+      width: auto;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 380px) {
+  .contact {
+    &__hours-days {
+      width: 170px;
+    }
+    &__address{
+      max-width: 250px;
+      margin-bottom: 5px;
+    }
+  }
+}
