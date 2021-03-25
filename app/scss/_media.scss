@@ -73,7 +73,27 @@
       top: 60px;
     }
   }
+  .footer {
+    &__top-inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__top-title {
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    &__top-item {
+      margin: 0 60px 40px;
+    }
+    &__text,
+    &__box-phone,
+    &__address,
+    &__address-box {
+      margin-bottom: 15px;
+    }
+  }
 }
+
 @media (max-width: 1100px) {
   .sections {
     &__item:nth-child(even) {
@@ -205,6 +225,16 @@
       margin: 0 25px 75px;
     }
   }
+  .blog {
+    &__box-img {
+      margin: 0 auto 25px;
+    }
+  }
+  .footer {
+    &__top-item {
+      margin: 0 20px 40px;
+    }
+  }
 }
 
 @media (max-width: 780px) {
@@ -261,6 +291,44 @@
   }
   .team {
     padding: 80px 0;
+  }
+  .blog {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    &__pagination {
+      margin-top: 35px;
+    }
+    &::after {
+      height: 135px;
+    }
+  }
+  .connect {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    &::after {
+      height: 135px;
+    }
+    &__content {
+      padding: 0;
+    }
+  }
+  .footer {
+    &__top {
+      padding-top: 90px;
+      padding-bottom: 20px;
+    }
+    &__top-logo {
+      margin-bottom: 50px;
+    }
+  }
+  .form-modal .connect {
+    &__form-name,
+    &__form-mail,
+    &__form-phone,
+    &__form-select,
+    &__form-textarea {
+      max-width: 100%;
+    }
   }
 }
 
@@ -364,6 +432,22 @@
       margin-right: 0;
     }
   }
+  .blog {
+    &__box-img {
+      max-width: 450px;
+      img {
+        height: 250px;
+      }
+    }
+  }
+  .connect {
+    &__form-name,
+    &__form-mail,
+    &__form-phone,
+    &__form-select {
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 560px) {
@@ -431,6 +515,9 @@
     &__button-next {
       right: -35px;
     }
+    &__form-textarea {
+      height: 200px;
+    }
   }
   .team {
     &__inner {
@@ -462,6 +549,37 @@
     &__button-prev {
       left: -35px;
     }
+  }
+  .connect {
+    &__form-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    &__form-personal {
+      order: -1;
+      margin: 0 auto 25px;
+    }
+  }
+  .footer {
+    &__top-item {
+      margin: 0 0 40px;
+    }
+    &__bottom-text {
+      text-align: center;
+      font-size: 12px;
+      span {
+        padding-left: 10px;
+        margin-left: 10px;
+        &::before {
+          top: -7px;
+        }
+      }
+    }
+  }
+  .form-modal{
+padding: 40px 25px;
   }
 }
 
@@ -524,7 +642,7 @@
     &__button {
       width: 35px;
       height: 35px;
-      top:0px;
+      top: 0px;
       &-prev {
         right: 35px;
       }
@@ -544,6 +662,11 @@
       &-next {
         left: 35px;
       }
+    }
+  }
+  .blog {
+    &__item-title {
+      font-size: 20px;
     }
   }
 }

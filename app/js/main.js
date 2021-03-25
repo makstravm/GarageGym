@@ -14,16 +14,15 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
 
-  if (scroll >= 100) {
-    $('.header__top-wrapper, .link-to-top__btn').addClass('active');
-  } else {
-    $('.header__top-wrapper, .link-to-top__btn').removeClass('active');
-  }
-})
-
+    if (scroll >= 100) {
+      $('.header__top-wrapper, .link-to-top__btn').addClass('active');
+    } else {
+      $('.header__top-wrapper, .link-to-top__btn').removeClass('active');
+    }
+  })
 });
 
 const swiperBg = new Swiper('.header__swiper', {
@@ -70,8 +69,8 @@ const swiperCommentsImg = new Swiper('.stories__swiper', {
     nextEl: '.stories__button-next',
     prevEl: '.stories__button-prev',
   },
+});
 
-})
 const swiperCommentsContent = new Swiper('.stories__content-swiper', {
   centerSlides: true,
   slidesPerView: 1,
@@ -81,6 +80,7 @@ const swiperCommentsContent = new Swiper('.stories__content-swiper', {
   }
 
 });
+
 swiperCommentsImg.controller.control = swiperCommentsContent;
 swiperCommentsContent.controller.control = swiperCommentsImg;
 
@@ -96,8 +96,8 @@ const swiperTeamImg = new Swiper('.team__swiper', {
     nextEl: '.team__button-next',
     prevEl: '.team__button-prev',
   },
+});
 
-})
 const swiperTeamContent = new Swiper('.team__content-swiper', {
   centerSlides: true,
   slidesPerView: 1,
@@ -107,22 +107,32 @@ const swiperTeamContent = new Swiper('.team__content-swiper', {
   }
 
 });
+
 swiperTeamImg.controller.control = swiperTeamContent;
 swiperTeamContent.controller.control = swiperTeamImg;
+
 
 const swiperBlog = new Swiper('.blog__swiper', {
   autoplay: {
     delay: 3500,
     disableOnInteraction: false,
   },
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 70,
-  slidesPerGroup: 2,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
     el: '.blog__pagination',
     clickable: true,
   },
-
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+    840: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
+  },
 });

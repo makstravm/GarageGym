@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <!-- <header class="header" id="top">
+  <header class="header" id="top">
     <div class="header__swiper">
       <div class="header__swiper-box swiper-wrapper">
         <div class="header__swiper-item swiper-slide" style="background-image: url(images/header-slider/1.jpg)">
@@ -22,7 +22,6 @@
         <div class="header__swiper-item swiper-slide" style="background-image: url(images/header-slider/4.jpg)">
         </div>
       </div>
-
     </div>
     <div class="header__content">
       <h1 class="header__title">TRANSFORM
@@ -232,7 +231,7 @@
     <div class="link-to-top">
       <a class="link-to-top__btn" href="#top"><img src="images/icons/angle-right.svg" alt="angle top"></a>
     </div>
-  </header> -->
+  </header>
   <section class="sections" id="sections">
     <div class="sections__wrapper">
       <div class="container">
@@ -440,7 +439,7 @@
       </div>
     </div>
   </section>
-<section class="progress" id="progress">
+  <section class="progress" id="progress">
     <div class="container">
       <h3 class="progress__title title">why choose us
       </h3>
@@ -577,7 +576,7 @@
       </div>
     </div>
   </section>
- <section class="team" id="team">
+  <section class="team" id="team">
     <div class="container">
       <div class="team__inner">
         <div class="team__content">
@@ -863,10 +862,9 @@
           <div class="blog__pagination"></div>
         </div>
       </div>
-
     </div>
   </section>
-  <!-- <section class="connect" id="connect">
+  <section class="connect" id="connect">
     <div class="container">
       <div class="connect__wrapper">
         <div class="connect__content">
@@ -888,8 +886,11 @@
               <option value="-----">-----</option>
             </select>
             <textarea class='connect__form-textarea' placeholder="Drop us a few lines here..."></textarea>
-            <button class="connect__form-btn button" type="submit">SEND</button><span class="connect__form-personal">*
-              Personal data will be encrypted</span>
+            <div class="connect__form-box">
+              <button class="connect__form-btn button" type="submit">SEND</button>
+              <span class="connect__form-personal">*
+                Personal data will be encrypted</span>
+            </div>
           </form>
         </div>
       </div>
@@ -1010,7 +1011,7 @@
         Copyright © 2020 GARAGE <span>Privacy Policy</span>
       </p>
     </div>
-  </footer> -->
+  </footer>
   <div class="form-modal" id="form-modal" style="display: none;">
     <h3 class="form-modal__title">welcome</h3>
     <p class="form-modal__subtitle">
@@ -1028,10 +1029,12 @@
         <option value="-----">-----</option>
       </select>
       <textarea class='connect__form-textarea' placeholder="Drop us a few lines here..."></textarea>
-      <span class="connect__form-personal">*
-        Personal data will be encrypted</span>
+      <div class="connect__form-box">
+        <button class="connect__form-btn button" type="submit">SEND</button>
+        <span class="connect__form-personal">*
+          Personal data will be encrypted</span>
+      </div>
     </form>
-    <button class="connect__form-btn button" type="submit">SEND</button>
   </div>
   <script src="js/main.min.js"></script>
 </body>

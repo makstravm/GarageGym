@@ -10,6 +10,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .menu {
   background-color: rgba(#161616, 0.8);
   position: fixed;
@@ -86,6 +87,7 @@ body {
     }
   }
 }
+
 .contact {
   background-color: rgba(#161616, 0.8);
   position: fixed;
@@ -174,7 +176,6 @@ body {
     line-height: 22px;
     margin-bottom: 20px;
   }
-
   &__hours-days {
     @extend %monts-300;
     font-size: 16px;
@@ -238,6 +239,7 @@ body {
     }
   }
 }
+
 .title {
   font-size: 40px;
   line-height: 54px;
@@ -260,6 +262,7 @@ body {
   color: #000;
   cursor: pointer;
 }
+
 .link-to-top {
   position: fixed;
   margin: 0 auto;
@@ -311,8 +314,14 @@ body {
     @extend %monts-300;
     margin: 0 auto 20px;
   }
+  .connect__form-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
   .connect__form-personal {
     margin: 0 auto 20px;
+    order: -1;
   }
   .connect__form-btn {
     min-width: 250px;
